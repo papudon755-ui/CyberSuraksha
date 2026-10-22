@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — CyberSuraksha</title>
+  <meta name="description" content="Test your cyber safety knowledge with 10 quick questions — instant feedback and explanations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="CyberSuraksha logo" width="36" height="36">
+        <span>Cyber<em>Suraksha</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="threats.html">Threats</a>
+        <a href="safety-tips.html">Safety Tips</a>
+        <a href="quiz.html" class="active" aria-current="page">Quiz</a>
+        <a href="report.html">Report Fraud</a>
+        <a href="about.html">About</a>
+        <a href="report.html" class="nav-cta">Call 1930</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container hero-inner">
+        <span class="kicker">Test yourself</span>
+        <h1>How cyber-safe are you?</h1>
+        <p>10 quick questions, one per screen, with instant feedback. No sign-up, no score is stored — just honest practice.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="quiz-shell" id="quizShell">
+          <div class="quiz-progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+            <div class="quiz-progress-fill" id="quizFill"></div>
+          </div>
+          <div class="quiz-count" id="quizCount">Question 1 of 10</div>
+          <!-- Questions are rendered here by assets/js/quiz.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/logo.svg" alt="CyberSuraksha logo" width="36" height="36">
+            <span>Cyber<em>Suraksha</em></span>
+          </a>
+          <p>A cybersecurity awareness platform helping everyday internet users recognise fraud and stay safe online.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="threats.html">Threat library</a></li>
+            <li><a href="safety-tips.html">Safety tips</a></li>
+            <li><a href="quiz.html">Test yourself</a></li>
+            <li><a href="report.html">Report fraud</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Emergency</h4>
+          <p class="footer-helpline">Lost money to fraud?<br>Call <b>1930</b> immediately.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>A college design project — for learning only.</span>
+        <span>&copy; <span id="year"></span> CyberSuraksha</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/quiz.js"></script>
+</body>
+</html>

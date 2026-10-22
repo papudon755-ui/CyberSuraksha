@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety Tips — CyberSuraksha</title>
+  <meta name="description" content="The 5 golden rules of online safety, an interactive password strength checker, and a safe-browsing checklist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="CyberSuraksha logo" width="36" height="36">
+        <span>Cyber<em>Suraksha</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="threats.html">Threats</a>
+        <a href="safety-tips.html" class="active" aria-current="page">Safety Tips</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report Fraud</a>
+        <a href="about.html">About</a>
+        <a href="report.html" class="nav-cta">Call 1930</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container hero-inner">
+        <span class="kicker">Protect yourself</span>
+        <h1>Safety tips that actually work</h1>
+        <p>Simple habits, explained plainly. Follow these and you will avoid the vast majority of common frauds.</p>
+      </div>
+    </section>
+
+    <!-- 5 GOLDEN RULES -->
+    <section>
+      <div class="container">
+        <span class="kicker">The essentials</span>
+        <h2 class="section-title">5 Golden Rules</h2>
+        <p class="section-sub">Print these in your mind. They cover almost every scam described in the threat library.</p>
+        <ol class="rules">
+          <li>
+            <strong>Never share OTPs, PINs or passwords.</strong>
+            <p>No real bank, delivery company or government office ever asks for them — not on calls, not on SMS, not on WhatsApp. Anyone who asks is a scammer.</p>
+          </li>
+          <li>
+            <strong>Verify before you pay.</strong>
+            <p>Got a QR code or payment request? Confirm with the person through a separate phone call first. Remember: you never need a PIN to <em>receive</em> money.</p>
+          </li>
+          <li>
+            <strong>Use strong, unique passwords and turn on two-factor authentication.</strong>
+            <p>Long passwords that you do not reuse, plus a second verification step (like an authenticator app), keep accounts safe even if one password leaks.</p>
+          </li>
+          <li>
+            <strong>Think before you click.</strong>
+            <p>Check who really sent the message. Long-press a link (or hover on a computer) to see the true address before opening it.</p>
+          </li>
+          <li>
+            <strong>Keep your apps and phone updated.</strong>
+            <p>Updates fix security holes. Turn on automatic updates so you are protected without having to remember.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PASSWORD CHECKER -->
+    <section>
+      <div class="container">
+        <span class="kicker">Interactive tool</span>
+        <h2 class="section-title">Password strength checker</h2>
+        <p class="section-sub">Type a password to test it. This check runs only in your browser — nothing is sent anywhere.</p>
+        <div class="grid grid-2" style="align-items:start;">
+          <div class="pw-box">
+            <label for="pwInput" style="display:block;font-weight:600;margin-bottom:.6rem;">Try a password:</label>
+            <div class="pw-row">
+              <input type="text" id="pwInput" placeholder="e.g. mydogisnice" autocomplete="off" spellcheck="false" aria-describedby="pwLabel">
+            </div>
+            <div class="meter" role="img" aria-label="Password strength meter"><div class="meter-fill" id="pwFill"></div></div>
+            <div class="meter-label" id="pwLabel" aria-live="polite">Type a password to check its strength.</div>
+            <ul class="pw-tips">
+              <li><strong>Length matters most.</strong> Aim for 12 or more characters.</li>
+              <li><strong>Mix it up.</strong> Combine capital and small letters, numbers and symbols.</li>
+              <li><strong>One account, one password.</strong> Never reuse an important password on another site.</li>
+            </ul>
+          </div>
+          <div>
+            <img src="assets/img/password.jpg" alt="Illustration of a strong password protecting a user account" loading="lazy" style="margin-bottom:1.2rem;">
+            <div class="card">
+              <h3>Easy trick: use a passphrase</h3>
+              <p>Four random words are easier to remember and harder to crack than one tricky word — for example, <em>correct horse battery staple</em> style phrases you invent yourself. Add a number and a symbol to make it stronger.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFE BROWSING CHECKLIST -->
+    <section>
+      <div class="container">
+        <span class="kicker">Daily habits</span>
+        <h2 class="section-title">Safe-browsing checklist</h2>
+        <p class="section-sub"><span id="checklistProgress" aria-live="polite">0 of 6 habits checked</span> — tick them off as you make them yours.</p>
+        <ul class="checklist" id="safeChecklist">
+          <li><input type="checkbox" id="c1"><label for="c1"><span>Check the sender's name and address before opening any attachment.</span></label></li>
+          <li><input type="checkbox" id="c2"><label for="c2"><span>Long-press (or hover over) links to see the real address before tapping.</span></label></li>
+          <li><input type="checkbox" id="c3"><label for="c3"><span>Download apps only from the official Play Store or App Store.</span></label></li>
+          <li><input type="checkbox" id="c4"><label for="c4"><span>Turn on two-factor authentication for email, banking and social media.</span></label></li>
+          <li><input type="checkbox" id="c5"><label for="c5"><span>Never save card details on shopping sites you do not fully trust.</span></label></li>
+          <li><input type="checkbox" id="c6"><label for="c6"><span>Log out of banking and email on shared or borrowed devices.</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HELPLINE -->
+    <section>
+      <div class="container">
+        <div class="helpline" role="alert">
+          <h2>Something already went wrong?</h2>
+          <div class="big-number">1930</div>
+          <p>Call the national cyber helpline immediately — the earlier you report, the better.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/logo.svg" alt="CyberSuraksha logo" width="36" height="36">
+            <span>Cyber<em>Suraksha</em></span>
+          </a>
+          <p>A cybersecurity awareness platform helping everyday internet users recognise fraud and stay safe online.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="threats.html">Threat library</a></li>
+            <li><a href="safety-tips.html">Safety tips</a></li>
+            <li><a href="quiz.html">Test yourself</a></li>
+            <li><a href="report.html">Report fraud</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Emergency</h4>
+          <p class="footer-helpline">Lost money to fraud?<br>Call <b>1930</b> immediately.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>A college design project — for learning only.</span>
+        <span>&copy; <span id="year"></span> CyberSuraksha</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

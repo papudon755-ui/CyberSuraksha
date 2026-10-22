@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSuraksha — Stay Safe in the Digital World</title>
+  <meta name="description" content="CyberSuraksha is a cybersecurity awareness platform. Learn how online fraud works — and how to stop it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="CyberSuraksha logo" width="36" height="36">
+        <span>Cyber<em>Suraksha</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navLinks" class="nav-links" aria-label="Main">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="threats.html">Threats</a>
+        <a href="safety-tips.html">Safety Tips</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report Fraud</a>
+        <a href="about.html">About</a>
+        <a href="report.html" class="nav-cta">Call 1930</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="kicker">Cybersecurity awareness for everyone</span>
+        <h1>Stay Safe in the <span class="hl">Digital World</span></h1>
+        <p class="lead">Learn how online fraud works — and how to stop it.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="threats.html">Start Learning</a>
+          <a class="btn btn-outline" href="quiz.html">Take the Quiz</a>
+        </div>
+        <div class="hero-visual">
+          <canvas id="heroWave" aria-hidden="true" hidden></canvas>
+          <img id="heroImg" data-src="assets/img/hero.jpg" alt="Abstract glowing blue particle waves representing digital activity" class="hero-fallback" hidden>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY IT MATTERS -->
+    <section>
+      <div class="container">
+        <span class="kicker">Why it matters</span>
+        <h2 class="section-title">Online fraud can happen to anyone</h2>
+        <p class="section-sub">You do not need to be a computer expert to be targeted — or to protect yourself.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">&#9888;&#65039;</div>
+            <h3>Fraud messages are rising</h3>
+            <p>Scam calls, fake links and fraud messages reach phones across the country every single day.</p>
+          </div>
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">&#127919;</div>
+            <h3>Anyone can be targeted</h3>
+            <p>Students, parents, shopkeepers, first-time internet users — scammers do not check your background before trying.</p>
+          </div>
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">&#128737;&#65039;</div>
+            <h3>Awareness is the best protection</h3>
+            <p>Most frauds follow the same few tricks. Once you learn to spot them, you become a very hard target.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THREAT PREVIEW -->
+    <section>
+      <div class="container">
+        <span class="kicker">Threat library</span>
+        <h2 class="section-title">Know the tricks scammers use</h2>
+        <p class="section-sub">A quick look at the most common frauds. Open the full library for red flags and what to do.</p>
+        <div class="grid grid-4">
+          <div class="card">
+            <img src="assets/img/phishing.jpg" alt="Illustration of a phishing email with a suspicious link" loading="lazy">
+            <h3>Phishing</h3>
+            <p>Fake emails and messages that pretend to be your bank, delivery service or government office.</p>
+            <a class="card-link" href="threats.html">Learn more &rarr;</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/otp-scam.jpg" alt="Illustration of a phone showing a one-time password message" loading="lazy">
+            <h3>OTP fraud</h3>
+            <p>Callers who trick you into sharing the one-time password that protects your account.</p>
+            <a class="card-link" href="threats.html">Learn more &rarr;</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/upi-scam.jpg" alt="Illustration of a UPI QR code payment scam on a phone" loading="lazy">
+            <h3>UPI &amp; QR scams</h3>
+            <p>Fake QR codes and payment requests that steal money when you think you are receiving it.</p>
+            <a class="card-link" href="threats.html">Learn more &rarr;</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/ransomware.jpg" alt="Illustration of a computer locked by ransomware" loading="lazy">
+            <h3>Ransomware</h3>
+            <p>Malicious software that locks your files and demands payment to unlock them.</p>
+            <a class="card-link" href="threats.html">Learn more &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 GOLDEN RULES PREVIEW -->
+    <section>
+      <div class="container">
+        <span class="kicker">Start here</span>
+        <h2 class="section-title">5 Golden Rules of online safety</h2>
+        <p class="section-sub">If you remember nothing else, remember these five.</p>
+        <ol class="rules">
+          <li><strong>Never share OTPs, PINs or passwords.</strong><p>No real bank or company ever asks for them.</p></li>
+          <li><strong>Verify before you pay.</strong><p>Confirm QR codes and payment requests with the person directly.</p></li>
+          <li><strong>Use strong, unique passwords + two-factor authentication.</strong><p>Different password for every important account.</p></li>
+          <li><strong>Think before you click.</strong><p>Check the sender and the real link address first.</p></li>
+          <li><strong>Keep your apps and phone updated.</strong><p>Updates fix security problems hackers exploit.</p></li>
+        </ol>
+        <p style="margin-top:1.5rem;"><a class="btn btn-outline btn-sm" href="safety-tips.html">Explore all safety tips</a></p>
+      </div>
+    </section>
+
+    <!-- HELPLINE BANNER -->
+    <section>
+      <div class="container">
+        <div class="helpline" role="alert">
+          <h2>Lost money to fraud?</h2>
+          <div class="big-number">1930</div>
+          <p>Call immediately — the national cyber helpline. Toll-free, 24x7.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/logo.svg" alt="CyberSuraksha logo" width="36" height="36">
+            <span>Cyber<em>Suraksha</em></span>
+          </a>
+          <p>A cybersecurity awareness platform helping everyday internet users recognise fraud and stay safe online.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="threats.html">Threat library</a></li>
+            <li><a href="safety-tips.html">Safety tips</a></li>
+            <li><a href="quiz.html">Test yourself</a></li>
+            <li><a href="report.html">Report fraud</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Emergency</h4>
+          <p class="footer-helpline">Lost money to fraud?<br>Call <b>1930</b> immediately.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>A college design project — for learning only.</span>
+        <span>&copy; <span id="year"></span> CyberSuraksha</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
